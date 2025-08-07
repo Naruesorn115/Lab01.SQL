@@ -1,3 +1,4 @@
+--แบบฝักหัด--
 -- 1 --
 SELECT * FROM Products
 WHERE UnitPrice = 15;
@@ -5,6 +6,7 @@ WHERE UnitPrice = 15;
 SELECT * FROM products
 WHERE UnitsInStock < 250;
 -- 3 --
+
 
 
 
