@@ -1,3 +1,18 @@
+SELECT CategoryName, ProductName, UnitPrice
+FROM Categories , Products
+WHERE Categories.CategoryID = Products.CategoryID
+ORDER BY CategoryName
+--
+SELECT CategoryName, ProductName, UnitPrice
+FROM Products join Categories
+on Products.CategoryID = Categories.CategoryID
+--
+SELECT CategoryName, ProductName, UnitPrice
+FROM Products as p,Categories as c
+where p.CategoryID = c.CategoryID
+
+--
+
 SELECT p.ProductID, p.ProductName, s.CompanyName, s.Country
 FROM Products p JOIN Suppliers s ON p.SupplierID = s.SupplierID
 
